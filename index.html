@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0"/>
+        <title>Showcasing tables, forms, lists and media content</title>
+    </head>
+    
+<body>
+    <header>
+    <h1>Welcome to this Table, Form and Media Showcase</h1>
+        <p>This page demonstrates the use of lists, tables, media elements and functional forms using HTML5.</p>
+    </header>
+
+<section>
+    <h2>Banking Products</h2>
+    <ol>
+        <li>Savings Accounts</li>
+        <li>Current Accounts</li>
+        <li>Bank Cards</li>
+        <li>Deposit Accounts</li>
+    </ol>
+
+    <h3>Banking Services</h3>
+    <ul>
+        <li>Loans and Overdraft Services</li>
+        <li>Online Banking</li>
+        <li>ATMs and CDMs</li>
+        <li>Forex</li>
+        <li>Investment Banking</li>
+    </ul>
+</section>
+    
+<section>
+    <h2>Account Holders</h2>
+<table border="1">
+    <t head>
+        <tr>
+            <th>NAME</th>
+            <th>ACCOUNT TYPE</th>
+            <th>ACCOUNT NUMBER</th>
+            <th>AMOUNT(Ksh)</th>
+            <th>TRANSACTIONS</th>
+            <th>PRODUCTS</th>
+            <th>SERVICES</th>
+        </tr>
+    </t>
+    <t body>
+        <tr>
+            <td>Monica Wambui</td>
+            <td>Savings Account</td>
+            <td>2009876546</td>
+            <td>14,500</td>
+            <td>Deposit</td>
+            <td>Bank Card</td>
+            <td>Online Banking</td>
+        </tr>
+        <tr>
+            <td>Zedekiah Muindi</td>
+            <td>Savings Account</td>
+            <td>6287399000</td>
+            <td>57,372</td>
+            <td>Transfer</td>
+            <td>Savings Account</td>
+            <td>Loan and Overdraft Services</td>   
+        </tr>
+        <tr>
+            <td>Maurice Muturi</td>
+            <td>Current Account</td>
+            <td>5600866000</td>
+            <td>90,900</td>
+            <td>Withdrawal</td>
+            <td>Current Account</td>
+            <td>Forex</td>
+        </tr>
+        <tr>
+            <td>Phyllis Kambua</td>
+            <td>Savings Account</td>
+            <td>53690002900</td>
+            <td>67,432</td>
+            <td>Deposit</td>
+            <td>Bank Card</td>
+            <td>Investment Banking</td>
+        </tr>
+        <tr>
+            <td>Vivian Achieng</td>
+            <td>Current Account</td>
+            <td>627900290020</td>
+            <td>49,000</td>
+            <td>Transfer</td>
+            <td>Bank Card</td>
+            <td>ATM</td>
+        </tr>
+        <tr>
+            <td>Wallace Mutoma</td>
+            <td>Deposit Account</td>
+            <td>89087707600</td>
+            <td>65,980</td>
+            <td>Deposit</td>
+            <td>Bank Card</td>
+            <td>CDM</td>
+        </tr>
+    </t>
+    </table>
+</section>
+
+<section>
+    <h2>Media</h2>
+    <img src="https://img.freepik.com/free-vector/bank-finance-infographic-template_23-2149732179.jpg" alt="Our Bank is for you">
+    
+    <video controls width="600" height="400">
+        <source src="https://youtu.be/FvtRy5_3cVY"
+        This is a banking video.
+    </video>
+</section>
+    
+<section>
+    <audio controls>
+        <source src="https://pixabay.com/music/search/genre/upbeat/">
+        This is a banking audio.
+    </audio>
+</section>
+
+
+<section id="Form">
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="sname">Second Name:</label>
+            <input type="text" id="sname" name="sname" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+             placeholder="+254789000000"
+             pattern="^\+?[0-9]{10,15}$"
+             required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="" id="password" name="password" 
+            required
+            pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$"
+            placeholder="At least 8 chars, 1 uppercase, 1 number"><br><br>
+
+            <label for="acc_type">Account Type:</label>
+            <input type="text" id="acc_type" name="acc_type" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Details</legend>
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <fieldset>
+            <label for="nok">Next of Kin:</label>
+            <input type="text" id="nok" name="nok" required><br><br>
+
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="idnum">ID Number:</label>
+            <input type="number" id="idnum" name="idnum" required maxlength="8"><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+            placeholder="+25467389000"
+            pattern="^\+[0-9]{10,15}$"
+            required><br><br>
+        </fieldset>
+
+            <label>
+                <input type="checkbox" name="terms" required>
+                I Agree to Terms and Conditions
+            </label>
+        </fieldset>
+    </form>
+</section>
+
+    </body>
+</html>
